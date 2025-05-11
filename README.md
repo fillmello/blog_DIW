@@ -7,7 +7,8 @@ The main idea for this project is to develop a responsive Web Application for a 
 
 
 
-## Prints do Site
+
+## Screenshots
 ![Print 1](<public/imgs/Captura de Tela 2025-04-09 às 19.39.49.png>)
 ![Print 2](<public/imgs/Captura de Tela 2025-04-09 às 19.40.21.png>)
 ![Print 3](<public/imgs/Captura de Tela 2025-04-09 às 19.40.41.png>)

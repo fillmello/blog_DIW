@@ -14,7 +14,16 @@
       .saude, .tecnologia {
         display: none;
       }
-    }
+      footer div {
+          display: block;
+          width: 100%;
+        }
+
+        #LNEWS {
+          display: none;
+        }
+      }
+    
 
     @media (max-width: 768px) {
       .noticia-info {
@@ -23,14 +32,8 @@
       footer div {
         width: 100%;
       }
-
-      @media (max-width: 991px) {
-        footer div {
-          display: block;
-          width: 100%;
-        }
-      }
     }
+
   </style>
 </head>
 <body class="bg-light">
@@ -82,7 +85,7 @@
     <!-- ÚLTIMAS NOTÍCIAS -->
     <h1 class="ultimas_noticias fw-bold mb-4 container mt-5 ms-5">Últimas Notícias</h1>
     <section class="row g-4 justify-content-center mx-0">
-      <a href="#" id="cards" class="col-12 col-sm-3 d-flex justify-content-center">
+      <a href="#" id="cards" class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
         <article class="w-100">
           <div id="news1" class="card shadow">
             <img class="card-img-top" src="" alt="">
@@ -93,7 +96,7 @@
           </div>
         </article>
       </a>
-      <a href="#" id="cards" class="col-12 col-sm-3 d-flex justify-content-center">
+      <a href="#" id="cards" class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
         <article class="w-100">
           <div id="news2" class="card shadow">
             <img class="card-img-top" src="" alt="">
@@ -104,7 +107,7 @@
           </div>
         </article>
       </a>
-      <a href="#" id="cards" class="col-12 col-sm-3 d-flex justify-content-center">
+      <a href="#" id="cards" class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
         <article class="w-100">
           <div id="news3" class="card shadow">
             <img class="card-img-top" src="" alt="">
@@ -115,7 +118,7 @@
           </div>
         </article>
       </a>
-      <a href="#" class="col-12 col-sm-3 d-flex justify-content-center">
+      <a href="#" id="LNEWS" class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
         <article class="w-100">
           <div id="news4" class="card shadow">
             <img class="card-img-top" src="" alt="">
@@ -171,20 +174,33 @@
   </footer>
 
 
-  <script src="app.js"></script>
+
   <script>
-    function disparo() {
+    
+
+
+    fetch('http://127.0.0.1:5500/db/db.json')
+      .then(response => response.json())
+      .then(dados => {
+        disparo(dados.noticias); 
+      })
+      .catch(error => {
+        console.error("Erro ao carregar o arquivo db.json:", error);
+      });
+  
+    function disparo(dados) {
       var idsDestaque = [1, 3, 5];
       var carouselInner = document.getElementById("carouselInner");
+  
 
       for (var i = 0; i < idsDestaque.length; i++) {
         var id = idsDestaque[i];
         var noticia = dados.find(n => n.id === id);
-
+  
         if (noticia) {
           var item = document.createElement("div");
           item.className = "carousel-item" + (i === 0 ? " active" : "");
-
+  
           item.innerHTML = `
             <a href="detalhes.html?id=${noticia.id}" class="text-decoration-none text-dark">
               <div class="d-flex flex-row w-100 align-items-stretch" style="height: 500px;">
@@ -198,23 +214,23 @@
               </div>
             </a>
           `;
-
+  
           carouselInner.appendChild(item);
         }
       }
-
+  
       // Últimas Notícias
       for (var k = 0; k < 4 && k < dados.length; k++) {
         var noticia = dados[k];
         var cardId = "news" + (k + 1);
         var card = document.getElementById(cardId);
-
+  
         if (card) {
           var tempo = card.querySelector("p");
           var titulo = card.querySelector("h5");
           var img = card.querySelector("img");
           var link = card.closest("a");
-
+  
           if (tempo && titulo && img && link) {
             tempo.textContent = noticia.tempo;
             titulo.textContent = noticia.titulo;
@@ -226,7 +242,8 @@
       }
     }
 
-    window.onload = disparo;
+    
   </script>
+
 </body>
 </html>

@@ -84,10 +84,10 @@
       const params = new URLSearchParams(window.location.search);
       const id = params.get('id');
 
-      fetch('http://127.0.0.1:5500/db/db.json')
+      fetch('noticias')
         .then(response => response.json())
         .then(response =>{    
-          const noticia = response.noticias.find(n => n.id == id);
+          const noticia = response.find(n => n.id == id);
           
           
           

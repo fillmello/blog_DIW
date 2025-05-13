@@ -189,10 +189,10 @@
     
 
 
-    fetch('http://127.0.0.1:5500/db/db.json')
+    fetch('noticias')
       .then(response => response.json())
       .then(dados => {
-        disparo(dados.noticias); 
+        disparo(dados); 
       })
       .catch(error => {
         console.error("Erro ao carregar o arquivo db.json:", error);

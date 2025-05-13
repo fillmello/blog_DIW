@@ -184,3 +184,52 @@ header input[type="search"] {
     color: var(--cor-clara);
   }
 
+
+
+  /* ========== DARK MODE ========== */
+  /* Melhorar metodologia do DARK MODE. Muitos importants e confuso*/
+
+
+  #toggleDarkMode {
+    display: flex;
+  }
+  
+  body.dark-mode {
+    background-color: #121212 !important;
+    color: #f1f1f1;
+  }
+  
+  body.dark-mode .card {
+    background-color: #1e1e1e !important;
+    color: #f1f1f1;
+  }
+  
+  body.dark-mode .text-muted {
+    color: #ccc !important;
+  }
+  
+  body.dark-mode .bg-white {
+    background-color: #1e1e1e !important;
+  }
+  
+  body.dark-mode .btn-outline-light {
+    background-color: #333 !important;
+    color: #f1f1f1;
+  }
+  
+  body.dark-mode a {
+    color: #FFFFFF !important;
+  }
+
+  body.dark-mode #pp {
+    color: #FFFFFF !important;
+  }
+  
+  body.dark-mode #titulop {
+    color: #FFFFFF !important;
+  }
+
+
+  .ultimas_noticias{
+    color: #FFFFFF !important;
+  }

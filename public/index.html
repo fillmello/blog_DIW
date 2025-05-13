@@ -14,6 +14,11 @@
       .saude, .tecnologia {
         display: none;
       }
+
+      #toggleDarkMode{
+        display: none;
+      }
+
       footer div {
           display: block;
           width: 100%;
@@ -38,8 +43,7 @@
 </head>
 <body class="bg-light">
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
 
   <!-- Header -->
   <header class="text-white p-4 fixed-top">
@@ -53,8 +57,14 @@
         <a href="saude.html" class="saude text-white fw-bold fs-5">Saúde</a>
       </div>
       <button class="d-md-none btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile">☰</button>
-      <input type="search" class="d-none d-sm-none d-md-flex w-10" placeholder="  Pesquisar"/>
+
+      <button id="toggleDarkMode" class="btn btn-outline-light  ms-3" title="Alternar modo escuro">
+        <i class="bi bi-moon-fill"></i>
+      </button>
+
+      <input id="search" type="search" class="d-none d-sm-none d-md-flex w-10" placeholder="  Pesquisar"/>
     </nav>
+
     <div class="collapse d-md-none" id="menuMobile">
       <div class="container py-2">
         <a href="politica.html" class="d-block text-white fw-bold fs-5 py-1">Política</a>
@@ -243,6 +253,20 @@
     }
 
     
+  const toggleButton = document.getElementById("toggleDarkMode");
+  const body = document.body;
+
+
+  toggleButton.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    if (body.classList.contains("dark-mode")) {
+      localStorage.setItem("darkMode", "enabled");
+    } else {
+      localStorage.setItem("darkMode", "disabled");
+    }
+  });
+
   </script>
 
 </body>

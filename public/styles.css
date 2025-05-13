@@ -230,6 +230,14 @@ header input[type="search"] {
   }
 
 
-  .ultimas_noticias{
+  body.dark-mode .ultimas_noticias{
     color: #FFFFFF !important;
+  }
+
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body.dark-mode .card {
+    transition: background-color 0.3s ease, color 0.3s ease;
   }

@@ -9,22 +9,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-  
   <style>
     @media (max-width: 991px) {
       .saude, .tecnologia {
         display: none;
       }
       footer div {
-          display: block;
-          width: 100%;
-        }
-
-        #LNEWS {
-          display: none;
-        }
+        display: block;
+        width: 100%;
       }
-    
+      #LNEWS {
+        display: none;
+      }
+    }
 
     @media (max-width: 768px) {
       .noticia-info {
@@ -34,7 +31,6 @@
         width: 100%;
       }
     }
-
   </style>
 </head>
 <body class="bg-light">
@@ -48,26 +44,24 @@
       <a href="index.html" class="text-white fs-1 fw-bold">PUC NEWS</a>
       <div class="d-none d-md-flex gap-4">
         <a href="politica.html" class="text-white fw-bold fs-5">Política</a>
-        <a href="Esportes.html" class="text-white fw-bold fs-5">Esportes</a>
+        <a href="esportes.html" class="text-white fw-bold fs-5">Esportes</a>
         <a href="cultura.html" class="text-white fw-bold fs-5">Cultura</a>
         <a href="tecnologia.html" class="tecnologia text-white fw-bold fs-5">Tecnologia</a>
         <a href="saude.html" class="saude text-white fw-bold fs-5">Saúde</a>
       </div>
       <button class="d-md-none btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#menuMobile">☰</button>
-      
-      <div class="d-flex gap-2"> <!-- Botão de edição e serach -->
-          <input type="search" class="d-none d-sm-none d-md-flex w-10" placeholder="  Pesquisar"/>
-          <button id="editButton" class="btn btn-light">
-            <i class="bi bi-pencil"></i>
-          </button>
+      <div class="d-flex gap-2">
+        <input type="search" class="d-none d-sm-none d-md-flex w-10" placeholder="Pesquisar"/>
+        <button id="editButton" class="btn btn-light">
+          <i class="bi bi-pencil"></i>
+        </button>
       </div>
-      </nav>
+    </nav>
 
-  
     <div class="collapse d-md-none" id="menuMobile">
       <div class="container py-2">
         <a href="politica.html" class="d-block text-white fw-bold fs-5 py-1">Política</a>
-        <a href="Esportes.html" class="d-block text-white fw-bold fs-5 py-1">Esportes</a>
+        <a href="esportes.html" class="d-block text-white fw-bold fs-5 py-1">Esportes</a>
         <a href="cultura.html" class="d-block text-white fw-bold fs-5 py-1">Cultura</a>
         <a href="tecnologia.html" class="d-block text-white fw-bold fs-5 py-1">Tecnologia</a>
         <a href="saude.html" class="d-block text-white fw-bold fs-5 py-1">Saúde</a>
@@ -78,63 +72,56 @@
   <!-- Main -->
   <main class="container-fluid mt-5 pt-5">
 
-    <!--======================================================================-->
-
-<!-- Forms CRUD -->
-
-  <div id="cartaoCRUD" class="container position-fixed vh-100 d-flex d-none align-items-center z-index-2">
-    <div class="row w-100 h-100 g-0">
-      <!-- Coluna 1: Formulário -->
-      <div class="col-md-8 h-100">
-        <div class="bg-dark text-white p-4 h-100">
-          <h3 class="text-center mb-4">Cadastrar Notícia</h3>
-          <form id="formCadastroNoticia">
-            <div class="mb-3">
-              <label for="tituloNoticia" class="form-label">Título</label>
-              <input type="text" class="form-control" id="tituloNoticia" placeholder="Digite o título da notícia" required>
-            </div>
-            <div class="mb-3">
-              <label for="imagemNoticia" class="form-label">Imagem</label>
-              <input type="text" class="form-control" id="imagemNoticia" placeholder="URL da imagem" required>
-            </div>
-            <div class="mb-3">
-              <label for="autorNoticia" class="form-label">Autor</label>
-              <input type="text" class="form-control" id="autorNoticia" placeholder="Autor da notícia">
-            </div>
-            <div class="mb-3">
-              <label for="fonteNoticia" class="form-label">Fonte</label>
-              <input type="text" class="form-control" id="fonteNoticia" placeholder="Fonte da notícia">
-            </div>
-            <div class="mb-3">
-              <label for="conteudoNoticia" class="form-label">Conteúdo</label>
-              <textarea id="conteudoNoticia" rows="6" class="form-control" placeholder="Digite o conteúdo da notícia"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Salvar</button>
-          </form>
+    <!-- Formulário CRUD -->
+    <div id="cartaoCRUD" class="container-fluid position-fixed vh-100 d-flex d-none align-items-center justify-content-center">
+      <div class="row w-100">
+        <!-- Coluna 1: Formulário -->
+        <div class="col-md-8">
+          <div class="bg-dark text-white p-4 rounded">
+            <h3 class="text-center mb-4">Cadastrar Notícia</h3>
+            <form id="formCadastroNoticia">
+              <div class="mb-3">
+                <label for="tituloNoticia" class="form-label">Título</label>
+                <input id="tituloNoticia" type="text" class="form-control" placeholder="Digite o título da notícia" required>
+              </div>
+              <div class="mb-3">
+                <label for="imagemNoticia" class="form-label">Imagem</label>
+                <input id="imagemNoticia" type="text" class="form-control" placeholder="URL da imagem" required>
+              </div>
+              <div class="mb-3">
+                <label for="autorNoticia" class="form-label">Autor</label>
+                <input id="autorNoticia" type="text" class="form-control" placeholder="Autor da notícia">
+              </div>
+              <div class="mb-3">
+                <label for="fonteNoticia" class="form-label">Fonte</label>
+                <input id="fonteNoticia" type="text" class="form-control" placeholder="Fonte da notícia">
+              </div>
+              <div class="mb-3">
+                <label for="conteudoNoticia" class="form-label">Conteúdo</label>
+                <textarea id="conteudoNoticia" rows="6" class="form-control" placeholder="Digite o conteúdo da notícia"></textarea>
+              </div>
+              <button id="btnSubmit" type="submit" class="btn btn-success w-100">Salvar</button>
+              <button id="btnUpdate" type="submit" class="btn btn-primary w-100">Editar</button>
+              <button id="btnDelete" type="button" class="btn btn-danger w-100">Excluir</button>
+            </form>
+          </div>
         </div>
-      </div>
 
-      <!-- Coluna 2: Conteúdo adicional -->
-      <div class="col-md-4 h-100">
-        <div class="bg-danger text-white p-4 h-100">
-
-          <h3 class="text-center mb-4">Notícias Cadastradas</h3>
-          <div id="noticiasCadastradas"></div> <!--Notícias Cadastradas Exibidas via JS-->
-        
+        <!-- Coluna 2: Notícias Cadastradas -->
+        <div class="col-md-4">
+          <div class="bg-danger text-white p-4 rounded">
+            <h3 class="text-center mb-4">Notícias Cadastradas</h3>
+            <div id="noticiasCadastradas" class="overflow-auto" style="max-height: 500px;">
+              <!-- Notícias Cadastradas Exibidas via JS -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-
-  <!--======================================================================-->
-
-
-
-
-    <!-- CARROSSEL -->
+    <!-- Carrossel -->
     <div id="carouselNoticiaDestaque" class="carousel slide carousel-dark d-none d-md-block w-100 p-5 my-5" data-bs-ride="carousel">
-      <div class="carousel-inner" id="carouselInner"></div> <!--JS-->
+      <div class="carousel-inner" id="carouselInner"></div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticiaDestaque" data-bs-slide="prev">
         <span class="carousel-control-prev-icon rounded-circle p-3" aria-hidden="true"></span>
         <span class="visually-hidden">Anterior</span>
@@ -145,161 +132,170 @@
       </button>
     </div>
 
-    <!-- ÚLTIMAS NOTÍCIAS -->
+    <!-- Últimas Notícias -->
     <h1 class="ultimas_noticias fw-bold mb-4 container mt-5 ms-5">Últimas Notícias</h1>
     <section class="row g-4 justify-content-center mx-0">
-      <a href="#" id="cards" class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
-        <article class="w-100">
-          <div id="news1" class="card shadow">
-            <img class="card-img-top" src="" alt="">
-            <div class="card-body">
-              <p class="text-muted"></p>
-              <h5 class="card-title fw-bold"></h5>
-            </div>
+      <div id="news1" class="col-12 col-sm-6 col-md-3">
+        <article class="card shadow">
+          <img class="card-img-top" src="" alt="">
+          <div class="card-body">
+            <p class="text-muted"></p>
+            <h5 class="card-title fw-bold"></h5>
           </div>
         </article>
-      </a>
-      <a href="#" id="cards" class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
-        <article class="w-100">
-          <div id="news2" class="card shadow">
-            <img class="card-img-top" src="" alt="">
-            <div class="card-body">
-              <p class="text-muted"></p>
-              <h5 class="card-title fw-bold"></h5>
-            </div>
+      </div>
+      <div id="news2" class="col-12 col-sm-6 col-md-3">
+        <article class="card shadow">
+          <img class="card-img-top" src="" alt="">
+          <div class="card-body">
+            <p class="text-muted"></p>
+            <h5 class="card-title fw-bold"></h5>
           </div>
         </article>
-      </a>
-      <a href="#" id="cards" class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
-        <article class="w-100">
-          <div id="news3" class="card shadow">
-            <img class="card-img-top" src="" alt="">
-            <div class="card-body">
-              <p class="text-muted"></p>
-              <h5 class="card-title fw-bold"></h5>
-            </div>
+      </div>
+      <div id="news3" class="col-12 col-sm-6 col-md-3">
+        <article class="card shadow">
+          <img class="card-img-top" src="" alt="">
+          <div class="card-body">
+            <p class="text-muted"></p>
+            <h5 class="card-title fw-bold"></h5>
           </div>
         </article>
-      </a>
-      <a href="#" id="LNEWS" class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
-        <article class="w-100">
-          <div id="news4" class="card shadow">
-            <img class="card-img-top" src="" alt="">
-            <div class="card-body">
-              <p class="text-muted"></p>
-              <h5 class="card-title fw-bold"></h5>
-            </div>
+      </div>
+      <div id="news4" class="col-12 col-sm-6 col-md-3">
+        <article class="card shadow">
+          <img class="card-img-top" src="" alt="">
+          <div class="card-body">
+            <p class="text-muted"></p>
+            <h5 class="card-title fw-bold"></h5>
           </div>
         </article>
-      </a>
+      </div>
     </section>
   </main>
 
   <!-- Footer -->
   <footer class="container-fluid bg-dark text-white py-5 mt-5">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <!-- Sobre -->
-      <section class="d-flex flex-column align-items-center justify-content-center text-center text-md-start mb-4 mb-md-0" style="flex: 1;">
+      <section class="text-center text-md-start mb-4 mb-md-0">
         <h2 class="fs-1 text-uppercase fw-bold">Sobre</h2>
-        <p class="fs-5 mt-3">
-          Olá! Meu nome é Filipe Melo, tenho 17 anos e sou natural de Rondônia. Atualmente, estou cursando Engenharia de Software na PUC Minas, onde venho me dedicando ao desenvolvimento de soluções criativas e funcionais na área da tecnologia. Sou apaixonado por inovação, programação e tudo que envolve o mundo digital.
-        </p>
+        <p class="fs-5 mt-3">Olá! Meu nome é Filipe Melo, tenho 17 anos e sou natural de Rondônia. Atualmente, estou cursando Engenharia de Software na PUC Minas.</p>
       </section>
-  
-      <!-- Autoria -->
-      <section class="d-flex flex-column align-items-center justify-content-center text-center" style="flex: 1;">
+      <section class="text-center">
         <h2 class="fs-1 text-uppercase fw-bold">Autoria</h2>
         <img src="imgs/perfil.jpg" alt="Foto de perfil" class="rounded-circle mb-3" style="width: 100px; height: 100px; object-fit: cover;">
-        <div class="d-flex flex-column align-items-center">
-          <p class="fs-5 mb-1">Aluno: Filipe Melo</p>
-          <p class="fs-5 mb-1">Curso: Engenharia de Software</p>
-          <p class="fs-5 mb-1">Turma: Manhã</p>
-          <div class="d-flex gap-3 mt-3">
-            <a href="https://github.com/fillmello/fillmello" target="_blank" class="text-white ms-5 fs-4" title="GitHub">
-              <i class="bi bi-github"></i>
-            </a>
-            <a href="https://www.instagram.com/fillmello" target="_blank" class="text-white fs-4" title="Instagram">
-              <i class="bi bi-instagram"></i>
-            </a>
-          </div>
+        <p class="fs-5 mb-1">Aluno: Filipe Melo</p>
+        <p class="fs-5 mb-1">Curso: Engenharia de Software</p>
+        <div class="d-flex gap-3 mt-3">
+          <a href="https://github.com/fillmello/fillmello" target="_blank" class="text-white fs-4">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.instagram.com/fillmello" target="_blank" class="text-white fs-4">
+            <i class="bi bi-instagram"></i>
+          </a>
         </div>
       </section>
     </div>
-  
-    <!-- Linha de separação -->
     <hr class="border-secondary my-4">
-  
-<!-- Direitos Autorais -->
-<div class="container d-flex ">
-  <p class="text-center fs-6 mb-0">&copy; 2025 Filipe Melo. Todos os direitos reservados.</p>
-</div>
-
+    <p class="text-center fs-6 mb-0">&copy; 2025 Filipe Melo. Todos os direitos reservados.</p>
   </footer>
-
 
   <script src="app.js"></script>
   <script>
-    
+    const APIURL = 'http://localhost:3000/noticias';
 
+    // Função para carregar as notícias do JSON Server
+    function listaNoticias() {
+      const cardNoticias = document.getElementById('noticiasCadastradas');
+      cardNoticias.innerHTML = ''; // Limpa o container antes de adicionar novas notícias
 
-    fetch('noticias')
-      .then(response => response.json())
-      .then(noticias => {
-          ultimasNoticias(noticias);
-          noticias.forEach(dados => {
-            disparo(dados); 
-          })
-        });
-
-
-  
-    function disparo(dados) {
-      // Carrossel
-      var carouselInner = document.getElementById("carouselInner");
-  
-          carouselInner.innerHTML += `
-            <a href="detalhes.html?id=${dados.id}" class=" carousel-item active text-decoration-none text-dark">
-              <div class="d-flex flex-row w-100 align-items-stretch" style="height: 500px;">
-                <div class="w-50 h-100">
-                  <img src="${dados.imagem}" alt="${dados.titulo}" class="w-100 h-100" style="object-fit: cover;">
-                </div>
-                <div class="w-50 d-flex flex-column justify-content-center p-4 bg-white">
-                  <p class="text-muted ms-5 fs-5 mb-2">${dados.tempo}</p>
-                  <h2 class="p-5 fw-bold mb-0">${dados.titulo}</h2>
-                </div>
+      fetch(APIURL)
+        .then(response => response.json())
+        .then(noticias => {
+          noticias.forEach(noticia => {
+            cardNoticias.innerHTML += `
+              <div class="noticia-card card m-4 bg-light text-dark" data-id="${noticia.id}">
+                <h5 class="text-dark">${noticia.titulo}</h5>
+                <h6 class="text-dark">${noticia.fonte} - ${noticia.autor}</h6>
+                <p class="text-dark">${noticia.tempo}</p>
+                <p class="text-dark">${noticia.conteudo.substring(0, 100)}...</p>
+                <a href="detalhes.html?id=${noticia.id}">
+                  <img src="${noticia.imagem}" alt="${noticia.titulo}" class="img-fluid">
+                </a>
               </div>
-            </a>
-          `;
-        }
-      
-  
-      // Últimas Notícias
-      function ultimasNoticias(dados){
-      for (var k = 0; k < 4 && k < dados.length; k++) {
-        var noticia = dados[k];
-        var cardId = "news" + (k + 1);
-        var card = document.getElementById(cardId);
-  
+            `;
+          });
+        })
+        .catch(error => {
+          console.error('Erro ao carregar as notícias:', error);
+          cardNoticias.innerHTML = '<p class="text-danger">Erro ao carregar as notícias.</p>';
+        });
+    }
+
+    // Função para carregar o carrossel de notícias em destaque
+    function carregarCarrossel(noticias) {
+      const carouselInner = document.getElementById('carouselInner');
+      carouselInner.innerHTML = ''; // Limpa o carrossel antes de adicionar novos itens
+
+      noticias.forEach((noticia, index) => {
+        carouselInner.innerHTML += `
+          <a href="detalhes.html?id=${noticia.id}" class="carousel-item ${index === 0 ? 'active' : ''} text-decoration-none text-dark">
+            <div class="d-flex flex-row w-100 align-items-stretch" style="height: 500px;">
+              <div class="w-50 h-100">
+                <img src="${noticia.imagem}" alt="${noticia.titulo}" class="w-100 h-100" style="object-fit: cover;">
+              </div>
+              <div class="w-50 d-flex flex-column justify-content-center p-4 bg-white">
+                <p class="text-muted ms-5 fs-5 mb-2">${noticia.tempo}</p>
+                <h2 class="p-5 fw-bold mb-0">${noticia.titulo}</h2>
+              </div>
+            </div>
+          </a>
+        `;
+      });
+    }
+
+    // Função para carregar as últimas notícias
+    function ultimasNoticias(noticias) {
+      for (let k = 0; k < 4 && k < noticias.length; k++) {
+        const noticia = noticias[k];
+        const cardId = `news${k + 1}`;
+        const card = document.getElementById(cardId);
+
         if (card) {
-          var tempo = card.querySelector("p");
-          var titulo = card.querySelector("h5");
-          var img = card.querySelector("img");
-          var link = card.closest("a");
-  
+          const tempo = card.querySelector('p');
+          const titulo = card.querySelector('h5');
+          const img = card.querySelector('img');
+          const link = card.closest('a');
+
           if (tempo && titulo && img && link) {
             tempo.textContent = noticia.tempo;
             titulo.textContent = noticia.titulo;
             img.src = noticia.imagem;
             img.alt = noticia.titulo;
-            link.href = "detalhes.html?id=" + noticia.id;
+            link.href = `detalhes.html?id=${noticia.id}`;
           }
         }
       }
     }
-    
 
-    
+    // Função principal para carregar todas as notícias
+    function carregarNoticias() {
+      fetch(APIURL)
+        .then(response => response.json())
+        .then(noticias => {
+          carregarCarrossel(noticias); // Carrega o carrossel
+          ultimasNoticias(noticias); // Carrega as últimas notícias
+        })
+        .catch(error => {
+          console.error('Erro ao carregar as notícias:', error);
+        });
+    }
+
+    // Evento para carregar as notícias ao carregar a página
+    document.addEventListener('DOMContentLoaded', () => {
+      listaNoticias(); // Carrega as notícias cadastradas
+      carregarNoticias(); // Carrega o carrossel e as últimas notícias
+    });
   </script>
-
 </body>
 </html>

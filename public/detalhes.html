@@ -75,40 +75,47 @@
   <script src="app.js"></script>
   <script>
     function disparo() {
+      // Obtém o ID da query string
       const params = new URLSearchParams(window.location.search);
       const id = params.get('id');
-
-      fetch('http://127.0.0.1:5500/db/db.json')
-        .then(response => response.json())
-        .then(response =>{    
-          const noticia = response.noticias.find(n => n.id == id);
-          
-          
-          
-          
-          if (noticia) {
-            document.getElementById('titulop').textContent = noticia.titulo;
-            document.getElementById('tempop').textContent = `${noticia.autor} - ${noticia.tempo}`;
-            document.getElementById('jornal').textContent = `- ${noticia.fonte}`;
-            document.getElementById('imgp').src = noticia.imagem;
-            document.getElementById('imgp').alt = noticia.titulo;
-            document.getElementById('pp').innerHTML = noticia.conteudo;
-            document.getElementById('fonte').innerHTML = noticia.fonteImagem
-          } else {
-            document.getElementById('titulop').textContent = "Notícia não encontrada.";
-          }
-        })
-
-
-        .catch(error => {
-        console.error("Erro ao carregar o arquivo db.json:", error);
-        document.getElementById('titulop').textContent = "Erro ao carregar as notícias.";
-        });
+  
+      // Verifica se o ID foi fornecido
+      if (!id) {
+        document.getElementById('titulop').textContent = "ID da notícia não fornecido.";
+        return;
       }
-        
-
-    
-
+  
+      // Faz a requisição ao JSON Server para buscar a notícia pelo ID
+      fetch(`http://localhost:3000/noticias/${id}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("Erro ao buscar a notícia.");
+          }
+          return response.json();
+        })
+        .then(noticia => {
+          // Verifica se a notícia foi encontrada
+          if (!noticia) {
+            document.getElementById('titulop').textContent = "Notícia não encontrada.";
+            return;
+          }
+  
+          // Preenche os elementos da página com os dados da notícia
+          document.getElementById('titulop').textContent = noticia.titulo;
+          document.getElementById('tempop').textContent = `${noticia.autor} - ${noticia.tempo}`;
+          document.getElementById('jornal').textContent = `- ${noticia.fonte}`;
+          document.getElementById('imgp').src = noticia.imagem;
+          document.getElementById('imgp').alt = noticia.titulo;
+          document.getElementById('pp').innerHTML = noticia.conteudo;
+          document.getElementById('fonte').innerHTML = `<a href="${noticia.fonteImagem}" target="_blank">Fonte Original</a>`;
+        })
+        .catch(error => {
+          console.error("Erro ao carregar a notícia:", error);
+          document.getElementById('titulop').textContent = "Erro ao carregar a notícia.";
+        });
+    }
+  
+    // Chama a função disparo ao carregar a página
     window.onload = disparo;
   </script>
 </body>

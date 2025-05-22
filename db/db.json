@@ -1,76 +1,66 @@
 {
-
-    "noticias": [
-        {
-            "id": 1,
-            "titulo": "Prefeitura Lança Novo Plano de Mobilidade Urbana",
-            "descricao": "Novo plano visa melhorar o transporte público e reduzir o trânsito na cidade.",
-            "conteudo":"<p>O Governo de Minas, por meio da Secretaria de Estado de Infraestrutura, Mobilidade e Parcerias (Seinfra) e da Agência de Desenvolvimento da Região Metropolitana de Belo Horizonte (ARMBH) lançou, nessa quarta-feira (13/12), o Plano de Mobilidade da Região Metropolitana de Belo Horizonte (PlanMob – RMBH).</p><p>Durante o lançamento, o secretário adjunto da Seinfra, Pedro Calixto, reforçou a necessidade da participação dos municípios para que o planejamento seja efetivamente colocado em prática.</p><p>“A Região Metropolitana de Belo Horizonte transcende os limites de cada município e para termos uma solução de mobilidade é impossível que cada município pense de forma isolada. Por isso, a gente trabalhou arduamente neste planejamento. Agora, precisamos avançar para além do plano, em ações concretas que vão mudar e melhorar a vida do cidadão metropolitano”, reforçou.</p><p>O plano tem como objetivo contribuir com o desenvolvimento urbano sustentável da RMBH, visando a melhoria da acessibilidade e da mobilidade das pessoas e cargas na região.</p><p>“Um dos principais problemas que as regiões metropolitanas enfrentam é a questão da mobilidade. O plano vem como uma tentativa de resposta a esses diversos desafios”, enfatizou o diretor-geral da ARMBH, Marcus Vinícius Lopes.</p><p>As discussões sobre o PlanMob foram iniciadas em 2017 e contaram com ampla participação dos municípios, entidades, sociedade civil, instituições e demais atores que fazem a gestão da mobilidade urbana na RMBH.</p>",
-            "categoria": "Metropolitano",
-            "autor": "Joana Ribeiro",
-            "data": "2025-03-30",
-            "imagem": "imgs/PlanMobRMBH-credito-foto-Francielle_Cota_ARMBH.jpeg",
-            "tempo": "2 minutos atrás",
-            "fonteImagem" : "https://www.agenciaminas.mg.gov.br/noticia/governo-de-minas-lanca-plano-de-mobilidade-da-regiao-metropolitana-de-belo-horizonte/",
-            "fonte": "Agência Minas"
-        },
-        {
-            "id": 2,
-            "titulo": "Tecnologia 6G Está em Desenvolvimento",
-            "descricao": "Pesquisadores anunciam avanços na próxima geração de redes móveis.",
-            "conteudo": "<p>Contudo, o desenvolvimento do 6G é inevitável e está sendo feito pela indústria e centros de pesquisa, pois as tecnologias precisam evoluir para atender novos cenários de uso, possibilitados por novas tecnologias habilitadoras. Historicamente, uma nova geração de redes móveis surge a cada década, permitindo que as inovações amadureçam e estejam prontas para o mercado.</p><p>Adicionalmente, a maturidade de uma geração de rede móvel é atingida a cada duas gerações. O 1G proporcionou a chamada de voz móvel, mas somente no 2G esse serviço se tornou digital e criptografado. O 3G se propôs a fazer comunicação de dados, mas a internet se tornou rápida somente no 4G. E, apesar dos avanços do 5G, como velocidades ultra rápidas, baixa latência e a conexão de bilhões de dispositivos ao mesmo tempo, ele ainda apresenta limitações. O 5G não conseguiu atingir a latência de 1ms de ponta a ponta e deixou a desejar em cenários como a conectividade em áreas remotas. O 6G surge com o potencial de amadurecer a tecnologia, superando essas lacunas do 5G.</p><p>Outra característica da futura rede é sua capacidade de integrar completamente os mundos físico, digital e biológico. No aspecto físico, dispositivos conectados e sensores estarão presentes em todos os lugares, coletando dados em tempo real sobre o ambiente e os comportamentos humanos. Esses dados serão, então, processados no mundo digital, onde algoritmos de IA transformarão essas informações em insights acionáveis.</p><p>No entanto, será o campo biológico que realmente definirá essa nova tecnologia como uma revolução. Com a incorporação de dispositivos biomédicos e sensores vestíveis, será possível interagir diretamente com o corpo humano, monitorando sua saúde e desempenho em tempo real. Isso permitirá, por exemplo, que médicos acompanhem remotamente os sinais vitais de pacientes e intervenham antes que uma situação crítica ocorra.</p><p>Essa integração dos três mundos não apenas transformará a maneira como interagimos com a tecnologia, mas também moldará a sociedade na totalidade. As cidades, por exemplo, poderão ter gêmeos digitais, réplicas virtuais que auxiliam na gestão urbana, planejamento e desenvolvimento sustentável. As interações remotas se tornarão mais naturais e intuitivas, permitindo que pessoas se comuniquem como se estivessem fisicamente presentes, mesmo a quilômetros de distância.</p>",
-            "categoria": "Tecnologia",
-            "autor": "Carlos Mendes",
-            "data": "2025-03-28",
-            "imagem": "https://inatel.br/noticias/image/c3659988f7da229cd8f14df179f67073e3b1f4cd3d7eecd4ae9365dea660876c_900.webp",
-            "tempo": "27 minutos atrás",
-            "fonteImagem" : "https://inatel.br/noticias/o-impacto-revolucionario-do-6g-a-proxima-geracao-de-redes-moveis#:~:text=Contudo%2C%20o%20desenvolvimento%20do%206G,possibilitados%20por%20novas%20tecnologias%20habilitadoras.",
-            "fonte": "INATEL"       
-        },
-        {
-            "id": 3,
-            "titulo": "Festival de Música Reúne Mais de 50 Mil Pessoas",
-            "descricao": "Evento cultural movimentou o final de semana com atrações nacionais e internacionais.",
-            "conteudo": "<p>Tudo ali inspirava África. Desde as comidas servidas nas barracas de alimentação ao próprio line-up, composto quase totalmente por artistas negros. Empenhado em caprichar no figurino, o público deu um show à parte oferecendo um belo desfile a céu aberto, entre colares, braceletes, turbantes e todo tipo de vestimentas que evocavam herança cultural.</p><p>No sábado (9), passaram pelos palcos (eram dois, um ao lado do outro) artistas como Jorge Aragão, Melly, Duquesa, Planet Hemp, Irmãs de Pau e Erykah Badu. Sentindo-se literalmente em casa, a baiana Melly foi uma das atrações do Palco Agô.</p><p>Preciso dizer que me senti muito bem, antes, durante e depois de descer do palco do festival — disse a cantora ao GLOBO. — Foi a primeira vez de “Amaríssima” (seu disco de estreia, lançado em maio) no Afropunk, e tudo que eu conseguia sentir era orgulho. Estive ali celebrando a nossa cultura com o disco inteiro no peito e na boca do povo.</p><p>Uma das atrações mais esperadas da noite, Erykah Badu se atrasou para chegar no festival. Para agilizar a noite, a organização logo acionou o embaixador da swingueira, Léo Santana, adiantando a apresentação do ex-vocalista do Parangolé, que cantaria depois da americana. Deu tudo certo.</p>",
-            "categoria": "Cultura",
-            "autor": "Ana Clara Silva",
-            "data": "2025-03-27",
-            "imagem": "https://cdn.folhape.com.br/img/pc/450/450/dn_arquivo/2024/11/whatsapp-image-2024-11-11-at-200947.jpeg",
-            "tempo": "23 minutos atrás",
-            "fonteImagem" : "https://oglobo.globo.com/cultura/noticia/2024/11/11/afropunk-brasil-reune-mais-de-50-mil-pessoas-no-parque-de-exposicoes-de-salvador-no-ultimo-fim-de-semana.ghtml",
-            "fonte": "GLOBO"     
-        },
-        
-        {
-            "id": 4,
-            "titulo": "Trump recua e anuncia redução do ‘tarifaço’ por 90 dias para todos os países, exceto a China",
-            "descricao": "Evento cultural movimentou o final de semana com atrações nacionais e internacionais.",
-            "conteudo": "A medida é mais um episódio da nova disputa comercial entre EUA e China, iniciada pelo tarifaço de Trump. No último dia 2 de abril, o norte-americano anunciou taxas de importação sobre 180 países de todo o mundo. De lá para cá, houve retaliações de parte a parte, subindo tarifas de importação.<p></p>Os EUA haviam imposto uma taxa de 104% aos produtos chineses, que entraria em vigor nesta quarta. Em resposta, o Ministério das Finanças da China anunciou que subiria tarifas para 84% sobre os produtos americanos.<p></p>Em um futuro próximo, a China perceberá que os dias de exploração dos EUA e de outros países não são mais sustentáveis ou aceitáveis\".<p></p>Na mesma publicação, o líder norte-americano anunciou que irá reduzir para 10% as taxas recíprocas a outros países, pelo prazo de 90 dias. Ele se referiu à decisão como uma \"pausa\" no tarifaço, que há uma semana resultou na escalada da guerra comercial global.",
-            "categoria": "Cultura",
-            "autor": "Ana Clara Silva",
-            "data": "2025-03-27",
-            "imagem": "https://s2-g1.glbimg.com/RKZVaqA_qmWU2_rLu0MXuQPRhWQ=/0x0:3845x2563/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/4/6/ooV1FgSlOEO3EYN5hphg/2025-04-09t034107z-336535164-rc20udavw6fx-rtrmadp-3-usa-trump.jpg",
-            "tempo": " 9 horas atrás",
-            "fonteImagem" : "https://g1.globo.com/economia/noticia/2025/04/09/trump-recua-do-tarifaco.ghtml",
-            "fonte": "G1"   
-        },
-        {
-            "id": 5,
-            "titulo": "Apple faz iPhone no Brasil, mas diz que visa o mercado local e não tem planos de aumentar produção",
-            "descricao": "Evento cultural movimentou o final de semana com atrações nacionais e internacionais.",
-            "conteudo": "<p>Com a China ainda respondendo pela maior parte da produção de iPhones no mundo, a guerra comercial entre o país asiático e os EUA motiva especulações sobre se a Apple deverá investir na produção em outros centros.</p> <p>A supertaxa para os asiáticos deve fazer com que iPhones e outros itens importados subam bastante de preço para o consumidor americano.</p><p>No tarifaço de Trump, o Brasil recebeu uma taxa de 10% para a entrada de seus produtos nos EUA enquanto a China ficou com 125%, até agora.</p><p>Os iPhones vendidos no Brasil são feitos em Jundiaí (SP) pela taiwanesa Foxconn, que monta esses aparelhos a serviço da Apple.</p><p>A produção local estreou em 2011 e a Apple informa que ela está totalmente voltada para o mercado brasileiro. Atualmente são montadas no Brasil as linhas 14, 15 e 16 do iPhone. Os modelos Pro, mais sofisticados, são importados.</p><p>Perguntada sobre a possibilidade de passar a exportar aparelhos montados no Brasil, a Apple disse que não comenta especulações. Em relação a um aumento na produção, a marca afirmou que não existem planos no momento.</p><p>A Apple não respondeu qual é o volume de produção em Jundiaí, sob a justificativa de que não divulga números locais.</p><p>O g1 procurou a Foxconn, mas não teve retorno. No LinkedIn, a filial brasileira diz ter entre 5.000 e 10.000 funcionários. A empresa não produz apenas iPhones, mas também atende a outras marcas de tecnologia.</p>",
-            "categoria": "Cultura",
-            "autor": "Ana Clara Silva",
-            "data": "2025-03-27",
-            "imagem": "https://s2-g1.glbimg.com/Bw8aaKhT78kazzmnnqH5G4pKbrQ=/0x0:3791x2527/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/8/w/aWn0i8Rh2fhSS3AYWyYg/iphone-16.jpg",
-            "tempo": "47 minutos atrás",
-            "fonteImagem" : "https://g1.globo.com/tecnologia/noticia/2025/04/09/apple-faz-iphone-no-brasil-mas-diz-que-visa-o-mercado-local-e-nao-tem-planos-de-aumentar-producao.ghtml",
-            "fonte": "G1" 
-        }
-        
-    ]
+  "noticias": [
+    {
+      "id": "1",
+      "titulo": "Prefeitura Lança Novo Plano de Mobilidade Urbana",
+      "conteudo": "<p>O Governo de Minas, por meio da Secretaria de Estado de Infraestrutura, Mobilidade e Parcerias (Seinfra) e da Agência de Desenvolvimento da Região Metropolitana de Belo Horizonte (ARMBH) lançou, nessa quarta-feira (13/12), o Plano de Mobilidade da Região Metropolitana de Belo Horizonte (PlanMob – RMBH).</p><p>Durante o lançamento, o secretário adjunto da Seinfra, Pedro Calixto, reforçou a necessidade da participação dos municípios para que o planejamento seja efetivamente colocado em prática.</p><p>“A Região Metropolitana de Belo Horizonte transcende os limites de cada município e para termos uma solução de mobilidade é impossível que cada município pense de forma isolada. Por isso, a gente trabalhou arduamente neste planejamento. Agora, precisamos avançar para além do plano, em ações concretas que vão mudar e melhorar a vida do cidadão metropolitano”, reforçou.</p><p>O plano tem como objetivo contribuir com o desenvolvimento urbano sustentável da RMBH, visando a melhoria da acessibilidade e da mobilidade das pessoas e cargas na região.</p><p>“Um dos principais problemas que as regiões metropolitanas enfrentam é a questão da mobilidade. O plano vem como uma tentativa de resposta a esses diversos desafios”, enfatizou o diretor-geral da ARMBH, Marcus Vinícius Lopes.</p><p>As discussões sobre o PlanMob foram iniciadas em 2017 e contaram com ampla participação dos municípios, entidades, sociedade civil, instituições e demais atores que fazem a gestão da mobilidade urbana na RMBH.</p>",
+      "autor": "Joana Ribeiro",
+      "data": "21/05/2025",
+      "imagem": "imgs/PlanMobRMBH-credito-foto-Francielle_Cota_ARMBH.jpeg",
+      "tempo": "0 minutos atrás",
+      "fonte": "Agência Minas"
+    },
+    {
+      "id": "2",
+      "titulo": "Tecnologia 6G Está em Desenvolvimento",
+      "descricao": "Pesquisadores anunciam avanços na próxima geração de redes móveis.",
+      "conteudo": "<p>Contudo, o desenvolvimento do 6G é inevitável e está sendo feito pela indústria e centros de pesquisa, pois as tecnologias precisam evoluir para atender novos cenários de uso, possibilitados por novas tecnologias habilitadoras. Historicamente, uma nova geração de redes móveis surge a cada década, permitindo que as inovações amadureçam e estejam prontas para o mercado.</p><p>Adicionalmente, a maturidade de uma geração de rede móvel é atingida a cada duas gerações. O 1G proporcionou a chamada de voz móvel, mas somente no 2G esse serviço se tornou digital e criptografado. O 3G se propôs a fazer comunicação de dados, mas a internet se tornou rápida somente no 4G. E, apesar dos avanços do 5G, como velocidades ultra rápidas, baixa latência e a conexão de bilhões de dispositivos ao mesmo tempo, ele ainda apresenta limitações. O 5G não conseguiu atingir a latência de 1ms de ponta a ponta e deixou a desejar em cenários como a conectividade em áreas remotas. O 6G surge com o potencial de amadurecer a tecnologia, superando essas lacunas do 5G.</p><p>Outra característica da futura rede é sua capacidade de integrar completamente os mundos físico, digital e biológico. No aspecto físico, dispositivos conectados e sensores estarão presentes em todos os lugares, coletando dados em tempo real sobre o ambiente e os comportamentos humanos. Esses dados serão, então, processados no mundo digital, onde algoritmos de IA transformarão essas informações em insights acionáveis.</p><p>No entanto, será o campo biológico que realmente definirá essa nova tecnologia como uma revolução. Com a incorporação de dispositivos biomédicos e sensores vestíveis, será possível interagir diretamente com o corpo humano, monitorando sua saúde e desempenho em tempo real. Isso permitirá, por exemplo, que médicos acompanhem remotamente os sinais vitais de pacientes e intervenham antes que uma situação crítica ocorra.</p><p>Essa integração dos três mundos não apenas transformará a maneira como interagimos com a tecnologia, mas também moldará a sociedade na totalidade. As cidades, por exemplo, poderão ter gêmeos digitais, réplicas virtuais que auxiliam na gestão urbana, planejamento e desenvolvimento sustentável. As interações remotas se tornarão mais naturais e intuitivas, permitindo que pessoas se comuniquem como se estivessem fisicamente presentes, mesmo a quilômetros de distância.</p>",
+      "categoria": "Tecnologia",
+      "autor": "Carlos Mendes",
+      "data": "2025-03-28",
+      "imagem": "https://inatel.br/noticias/image/c3659988f7da229cd8f14df179f67073e3b1f4cd3d7eecd4ae9365dea660876c_900.webp",
+      "tempo": "27 minutos atrás",
+      "fonteImagem": "https://inatel.br/noticias/o-impacto-revolucionario-do-6g-a-proxima-geracao-de-redes-moveis#:~:text=Contudo%2C%20o%20desenvolvimento%20do%206G,possibilitados%20por%20novas%20tecnologias%20habilitadoras.",
+      "fonte": "INATEL"
+    },
+    {
+      "id": "3",
+      "titulo": "Festival de Música Reúne Mais de 50 Mil Pessoas",
+      "descricao": "Evento cultural movimentou o final de semana com atrações nacionais e internacionais.",
+      "conteudo": "<p>Tudo ali inspirava África. Desde as comidas servidas nas barracas de alimentação ao próprio line-up, composto quase totalmente por artistas negros. Empenhado em caprichar no figurino, o público deu um show à parte oferecendo um belo desfile a céu aberto, entre colares, braceletes, turbantes e todo tipo de vestimentas que evocavam herança cultural.</p><p>No sábado (9), passaram pelos palcos (eram dois, um ao lado do outro) artistas como Jorge Aragão, Melly, Duquesa, Planet Hemp, Irmãs de Pau e Erykah Badu. Sentindo-se literalmente em casa, a baiana Melly foi uma das atrações do Palco Agô.</p><p>Preciso dizer que me senti muito bem, antes, durante e depois de descer do palco do festival — disse a cantora ao GLOBO. — Foi a primeira vez de “Amaríssima” (seu disco de estreia, lançado em maio) no Afropunk, e tudo que eu conseguia sentir era orgulho. Estive ali celebrando a nossa cultura com o disco inteiro no peito e na boca do povo.</p><p>Uma das atrações mais esperadas da noite, Erykah Badu se atrasou para chegar no festival. Para agilizar a noite, a organização logo acionou o embaixador da swingueira, Léo Santana, adiantando a apresentação do ex-vocalista do Parangolé, que cantaria depois da americana. Deu tudo certo.</p>",
+      "categoria": "Cultura",
+      "autor": "Ana Clara Silva",
+      "data": "2025-03-27",
+      "imagem": "https://cdn.folhape.com.br/img/pc/450/450/dn_arquivo/2024/11/whatsapp-image-2024-11-11-at-200947.jpeg",
+      "tempo": "23 minutos atrás",
+      "fonteImagem": "https://oglobo.globo.com/cultura/noticia/2024/11/11/afropunk-brasil-reune-mais-de-50-mil-pessoas-no-parque-de-exposicoes-de-salvador-no-ultimo-fim-de-semana.ghtml",
+      "fonte": "GLOBO"
+    },
+    {
+      "id": "4",
+      "titulo": "Trump recua e anuncia redução do ‘tarifaço’ por 90 dias para todos os países, exceto a China",
+      "descricao": "Evento cultural movimentou o final de semana com atrações nacionais e internacionais.",
+      "conteudo": "A medida é mais um episódio da nova disputa comercial entre EUA e China, iniciada pelo tarifaço de Trump. No último dia 2 de abril, o norte-americano anunciou taxas de importação sobre 180 países de todo o mundo. De lá para cá, houve retaliações de parte a parte, subindo tarifas de importação.<p></p>Os EUA haviam imposto uma taxa de 104% aos produtos chineses, que entraria em vigor nesta quarta. Em resposta, o Ministério das Finanças da China anunciou que subiria tarifas para 84% sobre os produtos americanos.<p></p>Em um futuro próximo, a China perceberá que os dias de exploração dos EUA e de outros países não são mais sustentáveis ou aceitáveis\".<p></p>Na mesma publicação, o líder norte-americano anunciou que irá reduzir para 10% as taxas recíprocas a outros países, pelo prazo de 90 dias. Ele se referiu à decisão como uma \"pausa\" no tarifaço, que há uma semana resultou na escalada da guerra comercial global.",
+      "categoria": "Cultura",
+      "autor": "Ana Clara Silva",
+      "data": "2025-03-27",
+      "imagem": "https://s2-g1.glbimg.com/RKZVaqA_qmWU2_rLu0MXuQPRhWQ=/0x0:3845x2563/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/4/6/ooV1FgSlOEO3EYN5hphg/2025-04-09t034107z-336535164-rc20udavw6fx-rtrmadp-3-usa-trump.jpg",
+      "tempo": " 9 horas atrás",
+      "fonteImagem": "https://g1.globo.com/economia/noticia/2025/04/09/trump-recua-do-tarifaco.ghtml",
+      "fonte": "G1"
+    },
+    {
+      "id": "5",
+      "titulo": "Apple faz iPhone no Brasil, mas diz que visa o mercado local e não tem planos de aumentar produção",
+      "descricao": "Evento cultural movimentou o final de semana com atrações nacionais e internacionais.",
+      "conteudo": "<p>Com a China ainda respondendo pela maior parte da produção de iPhones no mundo, a guerra comercial entre o país asiático e os EUA motiva especulações sobre se a Apple deverá investir na produção em outros centros.</p> <p>A supertaxa para os asiáticos deve fazer com que iPhones e outros itens importados subam bastante de preço para o consumidor americano.</p><p>No tarifaço de Trump, o Brasil recebeu uma taxa de 10% para a entrada de seus produtos nos EUA enquanto a China ficou com 125%, até agora.</p><p>Os iPhones vendidos no Brasil são feitos em Jundiaí (SP) pela taiwanesa Foxconn, que monta esses aparelhos a serviço da Apple.</p><p>A produção local estreou em 2011 e a Apple informa que ela está totalmente voltada para o mercado brasileiro. Atualmente são montadas no Brasil as linhas 14, 15 e 16 do iPhone. Os modelos Pro, mais sofisticados, são importados.</p><p>Perguntada sobre a possibilidade de passar a exportar aparelhos montados no Brasil, a Apple disse que não comenta especulações. Em relação a um aumento na produção, a marca afirmou que não existem planos no momento.</p><p>A Apple não respondeu qual é o volume de produção em Jundiaí, sob a justificativa de que não divulga números locais.</p><p>O g1 procurou a Foxconn, mas não teve retorno. No LinkedIn, a filial brasileira diz ter entre 5.000 e 10.000 funcionários. A empresa não produz apenas iPhones, mas também atende a outras marcas de tecnologia.</p>",
+      "categoria": "Cultura",
+      "autor": "Ana Clara Silva",
+      "data": "2025-03-27",
+      "imagem": "https://s2-g1.glbimg.com/Bw8aaKhT78kazzmnnqH5G4pKbrQ=/0x0:3791x2527/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/8/w/aWn0i8Rh2fhSS3AYWyYg/iphone-16.jpg",
+      "tempo": "48 minutos atrás",
+      "fonteImagem": "https://g1.globo.com/tecnologia/noticia/2025/04/09/apple-faz-iphone-no-brasil-mas-diz-que-visa-o-mercado-local-e-nao-tem-planos-de-aumentar-producao.ghtml",
+      "fonte": "G1"
+    }
+  ]
 }
-    
-    
-    
-    
